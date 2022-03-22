@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: lint
-      run: echo "Hello World!"
+      run: make lint
