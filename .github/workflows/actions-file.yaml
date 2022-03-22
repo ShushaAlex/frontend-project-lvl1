@@ -1,0 +1,11 @@
+name: 'lint my project'
+on:
+  push:
+  pull-request:
+jobs:
+  test-job:
+    runs-on: ubuntu-16.04
+    steps:
+    - uses: ../../Makefile
+    - name: 'lint'
+      run: make lint
