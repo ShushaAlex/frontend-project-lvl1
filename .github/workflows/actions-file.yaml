@@ -6,4 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: lint
-      run: make publish
+    - name: Check out repository 
+      uses: actions/checkout@v2
+    - name: lint
+      run: make lint
