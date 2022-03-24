@@ -1,1 +1,1 @@
-import { generateRandomNumber } from './cli-even';
+import { generateRandomNumber } from './cli-even.js';
