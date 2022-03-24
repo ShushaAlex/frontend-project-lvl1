@@ -1,5 +1,6 @@
 #!/usr/bin/env node
+/* eslint-disable eol-last */
 
-import userName from '../src/cli.js';
+import greetingByUserName from '../src/cli.js';
 
-userName();
+greetingByUserName();
