@@ -5,3 +5,5 @@
 
 [![Workflow](https://github.com/ShushaAlex/frontend-project-lvl1/actions/workflows/main.yml/badge.svg)](https://github.com/ShushaAlex/frontend-project-lvl1/actions)
 
+https://asciinema.org/a/mKTn7klU7MhR9vdhBsKC5YX5R
+
