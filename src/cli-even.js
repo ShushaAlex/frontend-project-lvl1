@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import { userName } from './cli.js';
 
-const generateRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
+export const generateRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
 const isEven = (num) => {
   if (num === 0 || num % 2 === 0) {
