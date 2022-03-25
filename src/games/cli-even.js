@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
-import { userName } from './cli.js';
+import { userName } from '../cli.js';
 
 export const generateRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 

@@ -1,12 +1,10 @@
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
 import { generateRandomNumber } from './cli-even.js';
-import { askUser } from './cli-ask-answer.js';
-import { userName } from './cli.js';
+import { userName } from '../cli.js';
 
 const generateRandomChar = (arr) => {
-  const arrLength = arr.length();
-  const i = generateRandomNumber(0, arrLength - 1);
+  const i = generateRandomNumber(0, 2);
   const result = arr[i];
   return result;
 };
@@ -16,7 +14,7 @@ const startRound = () => {
   const secondNumber = generateRandomNumber(0, 10);
   const operator = generateRandomChar(['+', '-', '*']);
   console.log('What is the result of the expression?');
-  askUser(firstNumber, operator, secondNumber);
+  console.log(`Question: ${firstNumber} ${operator} ${secondNumber}`);
 
   const calculateAnswer = () => {
     switch (operator) {
@@ -30,7 +28,7 @@ const startRound = () => {
         return 'There is no operator';
     }
   };
-  const correctAnswer = calculateAnswer.toString();
+  const correctAnswer = calculateAnswer(operator).toString;
   const userAnswer = readlineSync.question('Your answer: ');
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
