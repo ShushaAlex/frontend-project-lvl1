@@ -21,17 +21,13 @@ const startRound = () => {
   const calculateAnswer = () => {
     switch (operator) {
       case '+':
-        answer = firstNumber + secondNumber;
-        break;
+        return firstNumber + secondNumber;
       case '-':
-        answer = firstNumber - secondNumber;
-        break;
+        return firstNumber - secondNumber;
       case '*':
-        answer = firstNumber * secondNumber;
-        break;
+        return firstNumber * secondNumber;
       default:
-        answer = 'There is no operator';
-        break;
+        return 'There is no operator';
     }
   };
   const correctAnswer = calculateAnswer.toString();
