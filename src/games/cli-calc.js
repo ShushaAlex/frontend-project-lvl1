@@ -16,8 +16,8 @@ const startRound = () => {
   console.log('What is the result of the expression?');
   console.log(`Question: ${firstNumber} ${operator} ${secondNumber}`);
 
-  const calculateAnswer = () => {
-    switch (operator) {
+  const calculateAnswer = (str) => {
+    switch (str) {
       case '+':
         return firstNumber + secondNumber;
       case '-':
@@ -28,7 +28,7 @@ const startRound = () => {
         return 'There is no operator';
     }
   };
-  const correctAnswer = calculateAnswer(operator).toString;
+  const correctAnswer = calculateAnswer(operator).toString();
   const userAnswer = readlineSync.question('Your answer: ');
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
