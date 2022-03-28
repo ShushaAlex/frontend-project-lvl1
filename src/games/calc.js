@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
-import { generateRandomNumber } from './cli-even.js';
+import { generateRandomNumber } from './even.js';
 import { userName } from '../cli.js';
 
 const generateRandomChar = (arr) => {
