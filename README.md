@@ -8,4 +8,10 @@
 even-game asciinema 
 [![asciicast](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV.svg)](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV)
 
+asciinema brain-calc
+[![asciicast](https://asciinema.org/a/AWQnv7De2k9Yhhez41V3zLQyO.svg)](https://asciinema.org/a/AWQnv7De2k9Yhhez41V3zLQyO)
+
+asciinema brain-gcd
+[![asciicast](https://asciinema.org/a/tllemozn62jVCd6P4nDhuRjGv.svg)](https://asciinema.org/a/tllemozn62jVCd6P4nDhuRjGv)
+
 
