@@ -1,8 +1,7 @@
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
 import { userName } from '../cli.js';
-
-export const generateRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
+import { generateRandomNumber } from '../index.js';
 
 const isEven = (num) => {
   if (num === 0 || num % 2 === 0) {
