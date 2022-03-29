@@ -5,5 +5,7 @@
 
 [![Workflow](https://github.com/ShushaAlex/frontend-project-lvl1/actions/workflows/main.yml/badge.svg)](https://github.com/ShushaAlex/frontend-project-lvl1/actions)
 
-https://asciinema.org/a/mKTn7klU7MhR9vdhBsKC5YX5R
+even-game asciinema 
+[![asciicast](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV.svg)](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV)
+
 
