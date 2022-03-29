@@ -1,6 +1,8 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable eol-last */
+import readlineSync from 'readline-sync';
 import { generateRandomNumber } from '../index.js';
+import { userName } from '../cli.js';
 
 const getDividers = (num) => {
   const dividers = [];
@@ -21,10 +23,29 @@ const getCommonDivider = (arr1, arr2) => {
   return newArray[newArray.length - 1];
 };
 
-const correctAnswer = () => {
-  const firstNumber = generateRandomNumber(0, 100);
-  const secondNumber = generateRandomNumber(0, 100);
-  const dividersOfFirstNum = getDividers(firstNumber);
-  const dividersOfSecondNum = getDividers(secondNumber);
-  getCommonDivider(dividersOfFirstNum, dividersOfSecondNum);
+const calCorrectAnswer = (num1, num2) => {
+  const dividersOfFirstNum = getDividers(num1);
+  const dividersOfSecondNum = getDividers(num2);
+  return getCommonDivider(dividersOfFirstNum, dividersOfSecondNum);
 };
+
+const startGcdGame = () => {
+  console.log('Find the greatest common divisor of given numbers.');
+  const numberOfRounds = 3;
+  for (let i = 0; i < numberOfRounds; i += 1) {
+    const firstNumber = generateRandomNumber(0, 100);
+    const secondNumber = generateRandomNumber(0, 100);
+    console.log(`Question: ${firstNumber} ${secondNumber}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    const correctAnswer = calCorrectAnswer(firstNumber, secondNumber).toString();
+    if (correctAnswer !== userAnswer) {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+    console.log('Correct!');
+  }
+  console.log(`Congratulations, ${userName}!`);
+};
+
+export default startGcdGame;
