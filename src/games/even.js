@@ -7,17 +7,17 @@ const isEven = (num) => {
   if (num === 0 || num % 2 === 0) {
     return 'yes';
   }
-  return 'no'; // Проверка четности
+  return 'no';
 };
 
 const startRound = () => {
-  const randomNumber = generateRandomNumber(0, 100); // Вызываем случайное число
-  const correctAnswer = isEven(randomNumber); // Проверяем его на четность
+  const randomNumber = generateRandomNumber(0, 100);
+  const correctAnswer = isEven(randomNumber);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   console.log(`Question: ${randomNumber}`);
-  const userAnswer = readlineSync.question('Your answer: '); // Получаем ответ от юзера
+  const userAnswer = readlineSync.question('Your answer: ');
 
-  if (userAnswer === correctAnswer) { // Сравниваем ответы, сообщаем результат проверки юзеру
+  if (userAnswer === correctAnswer) {
     console.log('Correct!');
     return true;
   }
@@ -27,14 +27,14 @@ const startRound = () => {
 
 const startIsEvenGame = () => {
   const numberOfRounds = 3;
-  for (let i = 0; i < numberOfRounds; i += 1) { // задаем цикл из 3 раундов
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const result = startRound();
     if (result === false) {
-      console.log(`Let's try again, ${userName}!`); // в случае неверного ответа прерываем игру
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
-  console.log(`Congratulations, ${userName}!`); // награждение победителей
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default startIsEvenGame;
