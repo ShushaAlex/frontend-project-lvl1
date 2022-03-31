@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ShushaAlex/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ShushaAlex/frontend-project-lvl1/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/ShushaAlex/frontend-project-lvl1)
 
 [![Workflow](https://github.com/ShushaAlex/frontend-project-lvl1/actions/workflows/main.yml/badge.svg)](https://github.com/ShushaAlex/frontend-project-lvl1/actions)
 
@@ -13,5 +13,3 @@ asciinema brain-calc
 
 asciinema brain-gcd
 [![asciicast](https://asciinema.org/a/tllemozn62jVCd6P4nDhuRjGv.svg)](https://asciinema.org/a/tllemozn62jVCd6P4nDhuRjGv)
-
-
