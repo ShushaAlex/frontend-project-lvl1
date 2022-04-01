@@ -5,6 +5,13 @@
 
 [![Workflow](https://github.com/ShushaAlex/frontend-project-lvl1/actions/workflows/main.yml/badge.svg)](https://github.com/ShushaAlex/frontend-project-lvl1/actions)
 
+Консольная игра Brain-Games. Игра состоит из 5 простых заданий: 
+1. Четное число запускается командой brain-even
+2. Калькулятор запускается командой brain-calc
+3. Наибольший общий делитель запускается командой brain-gcd
+4. Прогрессия запускается командой brain-progression
+5. Простое число запускается командой brain-prime
+
 even-game asciinema 
 [![asciicast](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV.svg)](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV)
 
