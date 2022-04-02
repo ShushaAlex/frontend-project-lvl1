@@ -1,7 +1,7 @@
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
 import { userName } from '../cli.js';
-import { generateRandomNumber } from '../index.js';
+import generateRandomNumber from '../get-random-num.js';
 
 const isEven = (num) => {
   if (num === 0 || num % 2 === 0) {

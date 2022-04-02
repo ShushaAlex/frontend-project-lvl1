@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
-import { generateRandomNumber } from '../index.js';
+import generateRandomNumber from '../get-random-num.js';
 import { userName } from '../cli.js';
 
 const getDividers = (num) => {
