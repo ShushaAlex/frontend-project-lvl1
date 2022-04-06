@@ -1,7 +1,6 @@
 /* eslint-disable eol-last */
-import readlineSync from 'readline-sync';
 import generateRandomNumber from '../get-random-num.js';
-import { userName } from '../cli.js';
+import startGame from '../index.js';
 
 const getProgression = () => {
   const numbers = [];
@@ -18,23 +17,7 @@ const getProgression = () => {
   return [numbers.join(' '), missedNumber.toString()];
 };
 
-const startProgressionGame = () => {
-  console.log('What number is missing in the progression?');
-  const numberOfRounds = 3;
-  for (let i = 0; i < numberOfRounds; i += 1) {
-    const progressionFinal = getProgression();
-    const task = progressionFinal[0];
-    const correctAnswer = progressionFinal[1];
-    console.log(`Question: ${task}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (correctAnswer !== userAnswer) {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
-    console.log('Correct!');
-  }
-  console.log(`Congratulations, ${userName}!`);
-};
+const gameRules = 'What number is missing in the progression?';
+const startProgressionGame = () => startGame(gameRules, getProgression);
 
 export default startProgressionGame;
