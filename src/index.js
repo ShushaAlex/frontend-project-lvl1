@@ -4,11 +4,14 @@ import readlineSync from 'readline-sync';
 import greetingByUserName from './cli.js';
 import { userName } from './cli.js';
 
-const startGame = (gameRules, task, correctAnswer) => {
+const startGame = (gameRules, gameFunction) => {
   greetingByUserName();
   console.log(gameRules);
   const numberOfRounds = 3;
   for (let i = 0; i < numberOfRounds; i += 1) {
+    const gameParameters = gameFunction();
+    const task = gameParameters[0];
+    const correctAnswer = gameParameters[1];
     console.log(`Question: ${task}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (correctAnswer !== userAnswer) {
