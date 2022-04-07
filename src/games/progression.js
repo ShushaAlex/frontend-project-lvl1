@@ -1,5 +1,5 @@
 /* eslint-disable eol-last */
-import generateRandomNumber from '../get-random-num.js';
+import generateRandomNumber from '../getRandomNum.js';
 import startGame from '../index.js';
 
 const getProgression = () => {
