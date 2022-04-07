@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable eol-last */
 import generateRandomNumber from '../getRandomNum.js';
-import startGame from '../index.js';
+import engineGame from '../index.js';
 
 const getDividers = (num) => {
   const dividers = [];
@@ -37,6 +37,6 @@ const gcdGame = () => {
 };
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
-const startGcdGame = () => startGame(gameRules, gcdGame);
+const startGcdGame = () => engineGame(gameRules, gcdGame);
 
 export default startGcdGame;

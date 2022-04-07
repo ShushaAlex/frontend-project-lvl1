@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 import generateRandomNumber from '../getRandomNum.js';
-import startGame from '../index.js';
+import engineGame from '../index.js';
 
 const generateRandomChar = (arr) => {
   const i = generateRandomNumber(0, 2);
@@ -31,6 +31,6 @@ const calcGame = () => {
 };
 
 const gameRules = 'What is the result of the expression?';
-const startCalcGame = () => startGame(gameRules, calcGame);
+const startCalcGame = () => engineGame(gameRules, calcGame);
 
 export default startCalcGame;

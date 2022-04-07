@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 import generateRandomNumber from '../getRandomNum.js';
-import startGame from '../index.js';
+import engineGame from '../index.js';
 
 const getProgression = () => {
   const numbers = [];
@@ -18,6 +18,6 @@ const getProgression = () => {
 };
 
 const gameRules = 'What number is missing in the progression?';
-const startProgressionGame = () => startGame(gameRules, getProgression);
+const startProgressionGame = () => engineGame(gameRules, getProgression);
 
 export default startProgressionGame;

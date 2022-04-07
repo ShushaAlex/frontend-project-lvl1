@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 import generateRandomNumber from '../getRandomNum.js';
-import startGame from '../index.js';
+import engineGame from '../index.js';
 
 const isEven = () => {
   const num = generateRandomNumber(0, 20);
@@ -12,6 +12,6 @@ const isEven = () => {
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const startIsEvenGame = () => startGame(gameRules, isEven);
+const startIsEvenGame = () => engineGame(gameRules, isEven);
 
 export default startIsEvenGame;
