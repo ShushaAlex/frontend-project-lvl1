@@ -1,8 +1,11 @@
 /* eslint-disable import/no-duplicates */
 /* eslint-disable eol-last */
 import readlineSync from 'readline-sync';
-import greetingByUserName from './cli.js';
-import { userName } from './cli.js';
+
+console.log('Welcome to the Brain Games!');
+
+const userName = readlineSync.question('May I have your name? ');
+const greetingByUserName = () => console.log(`Hello, ${userName}!`);
 
 const numberOfRounds = 3;
 
