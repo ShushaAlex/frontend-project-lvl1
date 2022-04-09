@@ -14,9 +14,9 @@ const getProgression = (step, start, count) => {
 const generateData = () => {
   const progressionStep = generateRandomNumber(1, 7);
   const progressionStart = generateRandomNumber(0, 50);
-  const progressionNumbersCount = generateRandomNumber(5, 10);
-  const numbers = getProgression(progressionStep, progressionStart, progressionNumbersCount);
-  const missedNumberIndex = generateRandomNumber(0, numbers.length - 1);
+  const progressionLength = generateRandomNumber(5, 10);
+  const numbers = getProgression(progressionStep, progressionStart, progressionLength);
+  const missedNumberIndex = generateRandomNumber(0, progressionLength);
   const missedNumber = numbers[missedNumberIndex];
   numbers[missedNumberIndex] = '..';
   const task = numbers.join(' ');
