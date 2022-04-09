@@ -29,8 +29,8 @@ const calCorrectAnswer = (num1, num2) => {
 };
 
 const gcdGame = () => {
-  const firstNumber = generateRandomNumber(0, 100);
-  const secondNumber = generateRandomNumber(0, 100);
+  const firstNumber = generateRandomNumber(0, 20);
+  const secondNumber = generateRandomNumber(0, 20);
   const task = `${firstNumber} ${secondNumber}`;
   const correctAnswer = calCorrectAnswer(firstNumber, secondNumber).toString();
   return [task, correctAnswer];

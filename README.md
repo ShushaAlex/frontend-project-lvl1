@@ -13,16 +13,16 @@
 5. Простое число запускается командой brain-prime
 
 even-game asciinema 
-[![asciicast](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV.svg)](https://asciinema.org/a/SMCV0dRIxbIewQ8Gw8Pwi00wV)
+[![asciicast](https://asciinema.org/a/e2PoVMl2qQX8bJ2rwBRS7KJoY.svg)](https://asciinema.org/a/e2PoVMl2qQX8bJ2rwBRS7KJoY)
 
 asciinema brain-calc
-[![asciicast](https://asciinema.org/a/AWQnv7De2k9Yhhez41V3zLQyO.svg)](https://asciinema.org/a/AWQnv7De2k9Yhhez41V3zLQyO)
+[![asciicast](https://asciinema.org/a/n8hVv5mzy8TBvNsTrDpiWz2EJ.svg)](https://asciinema.org/a/n8hVv5mzy8TBvNsTrDpiWz2EJ)
 
 asciinema brain-gcd
-[![asciicast](https://asciinema.org/a/tllemozn62jVCd6P4nDhuRjGv.svg)](https://asciinema.org/a/tllemozn62jVCd6P4nDhuRjGv)
+[![asciicast](https://asciinema.org/a/vea15Wqgw5ML4wyiJyM0sbppq.svg)](https://asciinema.org/a/vea15Wqgw5ML4wyiJyM0sbppq)
 
 asciinema brain-progression
-[![asciicast](https://asciinema.org/a/72K6rp7gWjG2D1V4UYk0asvW3.svg)](https://asciinema.org/a/72K6rp7gWjG2D1V4UYk0asvW3)
+[![asciicast](https://asciinema.org/a/Dqj566V2B5I7K7RYlu6oRmF33.svg)](https://asciinema.org/a/Dqj566V2B5I7K7RYlu6oRmF33)
 
 asciinema brain-prime
-[![asciicast](https://asciinema.org/a/szfucXdzbfyy1ZVGpUmmRk0CJ.svg)](https://asciinema.org/a/szfucXdzbfyy1ZVGpUmmRk0CJ)
+[![asciicast](https://asciinema.org/a/hagPx6nlxvtzNjYsPt4EuxdHV.svg)](https://asciinema.org/a/hagPx6nlxvtzNjYsPt4EuxdHV)
