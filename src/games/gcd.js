@@ -1,5 +1,4 @@
 /* eslint-disable no-restricted-syntax */
-/* eslint-disable eol-last */
 import generateRandomNumber from '../getRandomNum.js';
 import engineGame from '../index.js';
 
@@ -28,15 +27,15 @@ const calCorrectAnswer = (num1, num2) => {
   return getCommonDivider(dividersOfFirstNum, dividersOfSecondNum);
 };
 
-const gcdGame = () => {
-  const firstNumber = generateRandomNumber(0, 20);
-  const secondNumber = generateRandomNumber(0, 20);
+const generateData = () => {
+  const firstNumber = generateRandomNumber(0, 100);
+  const secondNumber = generateRandomNumber(0, 100);
   const task = `${firstNumber} ${secondNumber}`;
   const correctAnswer = calCorrectAnswer(firstNumber, secondNumber).toString();
   return [task, correctAnswer];
 };
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
-const startGcdGame = () => engineGame(gameRules, gcdGame);
+const startGcdGame = () => engineGame(gameRules, generateData);
 
 export default startGcdGame;
