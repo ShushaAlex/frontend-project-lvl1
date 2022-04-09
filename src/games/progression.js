@@ -2,9 +2,9 @@
 import generateRandomNumber from '../getRandomNum.js';
 import engineGame from '../index.js';
 
-const getProgression = (step, start, count) => {
+const getProgression = (step, start, length) => {
   const numbers = [];
-  const progressionEnd = start + (step * count);
+  const progressionEnd = start + (step * length);
   for (let i = start; i <= progressionEnd; i += step) {
     numbers.push(i);
   }
