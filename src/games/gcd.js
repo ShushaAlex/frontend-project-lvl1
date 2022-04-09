@@ -3,11 +3,15 @@ import generateRandomNumber from '../getRandomNum.js';
 import engineGame from '../index.js';
 
 const gcd = (num1, num2) => {
-  let i = num1;
-  while (num1 % i !== 0 || num2 % i !== 0) {
-    i -= 1;
+  let result;
+  if (num1 === num2) {
+    result = num1;
+  } else if (num1 > num2) {
+    result = gcd((num1 - num2), num2);
+  } else if (num1 < num2) {
+    result = gcd(num1, (num2 - num1));
   }
-  return i;
+  return result;
 };
 
 const generateData = () => {
