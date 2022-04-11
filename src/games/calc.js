@@ -1,4 +1,3 @@
-/* eslint-disable eol-last */
 import generateRandomNumber from '../getRandomNum.js';
 import engineGame from '../index.js';
 

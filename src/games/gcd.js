@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 import generateRandomNumber from '../getRandomNum.js';
 import engineGame from '../index.js';
 
