@@ -4,9 +4,10 @@ import engineGame from '../index.js';
 
 const getProgression = (step, start, length) => {
   const numbers = [];
-  const progressionEnd = start + (step * length);
-  for (let i = start; i <= progressionEnd; i += step) {
-    numbers.push(i);
+  let number = start;
+  for (let i = 0; i <= length; i += 1) {
+    numbers.push(number);
+    number += step;
   }
   return numbers;
 };
